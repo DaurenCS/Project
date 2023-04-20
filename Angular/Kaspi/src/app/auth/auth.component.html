@@ -1,0 +1,18 @@
+<ng-container *ngIf="!logged">
+    <h2>Login form</h2>
+    <div>
+        <label>Username: </label>
+        <input type="text" [(ngModel)]="username">
+     
+      
+        <label>Password: </label>
+        <input type="password" [(ngModel)]="password">
+      
+      <button (click)="onSubmit()">Login</button>
+    </div>
+  </ng-container>
+
+
+
+
+  

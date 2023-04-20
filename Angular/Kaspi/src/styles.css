@@ -1,0 +1,207 @@
+/* Global Styles */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #066ed7;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button, button[type="button"] {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #d70946;
+  color: white;
+  border: none;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #67ce19;
+}
+
+.fancy-button i.material-icons {
+  /* color: #45698d; */
+  padding-right: 4px;
+}
+
+/* Top Bar */
+
+/* app-top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+app-top-bar h1 {
+  color: white;
+  margin: 0;
+}
+
+/* app-category .categories{
+    display: flex;
+} */
+.class2 .categories img{
+    width: 0px;
+   
+}
+.class2{
+  padding-left: 30%;
+  display: flex;
+  color: #BDBDBD;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0089d0;
+  line-height: 1.2;
+  border: 2px solid rgb(220, 220, 220) ;
+ 
+}
+
+.class2 .category {
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-left: 2px solid rgb(220, 220, 220) ;
+  
+  
+  
+}
+.class1 {
+    padding-left: 12%;
+    padding-top: 5%;
+    display: grid;  
+    grid-template-columns: auto auto auto;  
+    
+    gap: 10px;       
+}
+.class1 .categories img{
+    width: 50%; 
+    
+}
+.class1 .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    
+  }
+  
+  .class1 .category img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* add margin to create space between the photo and the name */
+  }
+
+/* Checkout Cart, Shipping Prices */
+
+.cart-item, .shipping-item {
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+}
+.product-photo{
+  width: 30%;
+  height: 40%;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

@@ -1,0 +1,42 @@
+<h2>Products</h2>
+<div class = "products">
+  <div  class = "product" *ngFor="let product of this.getProduct()" >
+      <div>
+          <a [title]="product.name + ' details'"
+             [routerLink]="['/products', product.id]">
+              <img class="product-photo" [src]="product.photo">
+              <h3>
+                  <a [title]="product.name + ' details'"
+                     [routerLink]="['/products', product.id]">
+                      {{ product.name }}
+                  </a>
+              </h3>
+              <p *ngIf="product.description">
+                  Description: {{ product.description }}
+              </p>
+          </a>
+
+          <div class ="share">
+
+<!--              <a href="https://web.whatsapp.com/send?text=Check out this product: {{product.site}}"><img class = "icon"src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt=""></a>-->
+<!--              <a href="https://telegram.me/share/url?url=<{{product.site}}>&text=<Hi>"><img class = "icon" src="https://cdn-icons-png.flaticon.com/128/3536/3536661.png" alt=""></a>-->
+          </div>
+          <!-- <button (click)="deleteProduct(product)">Delete</button> -->
+      </div>
+
+  </div>
+</div>
+
+
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
+<!--<p>sda</p>-->
+<!--<ul>-->
+<!--    <li *ngFor="let category of categories">-->
+<!--        {{ category.name }}-->
+<!--    </li>-->
+<!--</ul>-->
